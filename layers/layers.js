@@ -11,21 +11,47 @@ var wms_layers = [];
                 url: 'https://tile2.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1.1'
             })
         });
-var format__30042026_110039Layer0_1 = new ol.format.GeoJSON();
-var features__30042026_110039Layer0_1 = format__30042026_110039Layer0_1.readFeatures(json__30042026_110039Layer0_1, 
+var format__1 = new ol.format.GeoJSON();
+var features__1 = format__1.readFeatures(json__1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource__30042026_110039Layer0_1 = new ol.source.Vector({
+var jsonSource__1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource__30042026_110039Layer0_1.addFeatures(features__30042026_110039Layer0_1);
-var lyr__30042026_110039Layer0_1 = new ol.layer.Vector({
+jsonSource__1.addFeatures(features__1);
+var lyr__1 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource__30042026_110039Layer0_1, 
-                style: style__30042026_110039Layer0_1,
-                popuplayertitle: 'Без названия_30-04-2026_11-00-39 — Layer0',
+                source:jsonSource__1, 
+                style: style__1,
+                popuplayertitle: 'Районы',
                 interactive: true,
-                title: 'Без названия_30-04-2026_11-00-39 — Layer0'
-            });
+    title: 'Районы<br />\
+    <img src="styles/legend/_1_0.png" /> Архангельское<br />\
+    <img src="styles/legend/_1_1.png" /> Бруски<br />\
+    <img src="styles/legend/_1_2.png" /> Губайлово<br />\
+    <img src="styles/legend/_1_3.png" /> Дмитровское<br />\
+    <img src="styles/legend/_1_4.png" /> Изумрудные Холмы<br />\
+    <img src="styles/legend/_1_5.png" /> Ильинское<br />\
+    <img src="styles/legend/_1_6.png" /> Институтская/Панфилова<br />\
+    <img src="styles/legend/_1_7.png" /> Нахабино Север<br />\
+    <img src="styles/legend/_1_8.png" /> Нахабино Юг<br />\
+    <img src="styles/legend/_1_9.png" /> Николо Урюпино<br />\
+    <img src="styles/legend/_1_10.png" /> Опалиха<br />\
+    <img src="styles/legend/_1_11.png" /> Отрадное<br />\
+    <img src="styles/legend/_1_12.png" /> Павшинская Пойма<br />\
+    <img src="styles/legend/_1_13.png" /> Путилково<br />\
+    <img src="styles/legend/_1_14.png" /> Райцентр<br />\
+    <img src="styles/legend/_1_15.png" /> Сабурово<br />\
+    <img src="styles/legend/_1_16.png" /> Теплый бетон<br />\
+    <img src="styles/legend/_1_17.png" /> ТО Ильинское<br />\
+    <img src="styles/legend/_1_18.png" /> ТО Красногорск<br />\
+    <img src="styles/legend/_1_19.png" /> ТО Нахабино<br />\
+    <img src="styles/legend/_1_20.png" /> ТО Отрадненское<br />\
+    <img src="styles/legend/_1_21.png" /> ТО Павшинская Пойма<br />\
+    <img src="styles/legend/_1_22.png" /> Турецкий городок<br />\
+    <img src="styles/legend/_1_23.png" /> Чернево-1<br />\
+    <img src="styles/legend/_1_24.png" /> Чернево-2<br />\
+    <img src="styles/legend/_1_25.png" /> Южный<br />\
+    <img src="styles/legend/_1_26.png" /> <br />' });
 var format__2 = new ol.format.GeoJSON();
 var features__2 = format__2.readFeatures(json__2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -37,9 +63,9 @@ var lyr__2 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource__2, 
                 style: style__2,
-                popuplayertitle: 'Дороги региональные Красногорск',
+                popuplayertitle: 'ОП Красногорск',
                 interactive: true,
-                title: '<img src="styles/legend/_2.png" /> Дороги региональные Красногорск'
+                title: '<img src="styles/legend/_2.png" /> ОП Красногорск'
             });
 var format__3 = new ol.format.GeoJSON();
 var features__3 = format__3.readFeatures(json__3, 
@@ -52,9 +78,9 @@ var lyr__3 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource__3, 
                 style: style__3,
-                popuplayertitle: 'Дороги местые Красногорск',
+                popuplayertitle: 'Дороги региональные Красногорск',
                 interactive: true,
-                title: '<img src="styles/legend/_3.png" /> Дороги местые Красногорск'
+                title: '<img src="styles/legend/_3.png" /> Дороги региональные Красногорск'
             });
 var format__4 = new ol.format.GeoJSON();
 var features__4 = format__4.readFeatures(json__4, 
@@ -67,43 +93,61 @@ var lyr__4 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource__4, 
                 style: style__4,
-                popuplayertitle: 'ДТ Красногорск',
+                popuplayertitle: 'Дороги местые Красногорск',
                 interactive: true,
-                title: '<img src="styles/legend/_4.png" /> ДТ Красногорск'
+                title: '<img src="styles/legend/_4.png" /> Дороги местые Красногорск'
             });
-var format_boundary_administrative__5 = new ol.format.GeoJSON();
-var features_boundary_administrative__5 = format_boundary_administrative__5.readFeatures(json_boundary_administrative__5, 
+var format__5 = new ol.format.GeoJSON();
+var features__5 = format__5.readFeatures(json__5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_boundary_administrative__5 = new ol.source.Vector({
+var jsonSource__5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_boundary_administrative__5.addFeatures(features_boundary_administrative__5);
-var lyr_boundary_administrative__5 = new ol.layer.Vector({
+jsonSource__5.addFeatures(features__5);
+var lyr__5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_boundary_administrative__5, 
-                style: style_boundary_administrative__5,
-                popuplayertitle: 'вфывфвфывф — boundary_administrative_',
+                source:jsonSource__5, 
+                style: style__5,
+                popuplayertitle: 'ДТ Красногорск',
                 interactive: true,
-                title: 'вфывфвфывф — boundary_administrative_'
+                title: '<img src="styles/legend/_5.png" /> ДТ Красногорск'
+            });
+var format__6 = new ol.format.GeoJSON();
+var features__6 = format__6.readFeatures(json__6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource__6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource__6.addFeatures(features__6);
+var lyr__6 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource__6, 
+                style: style__6,
+                popuplayertitle: 'Чат-бот ручной',
+                interactive: true,
+                title: '<img src="styles/legend/_6.png" /> Чат-бот ручной'
             });
 
-lyr_2gisMap_0.setVisible(true);lyr__30042026_110039Layer0_1.setVisible(true);lyr__2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr_boundary_administrative__5.setVisible(true);
-var layersList = [lyr_2gisMap_0,lyr__30042026_110039Layer0_1,lyr__2,lyr__3,lyr__4,lyr_boundary_administrative__5];
-lyr__30042026_110039Layer0_1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr__2.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
+lyr_2gisMap_0.setVisible(true);lyr__1.setVisible(true);lyr__2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr__5.setVisible(true);lyr__6.setVisible(true);
+var layersList = [lyr_2gisMap_0,lyr__1,lyr__2,lyr__3,lyr__4,lyr__5,lyr__6];
+lyr__1.set('fieldAliases', {'id': 'id', '_id': '_id', 'name': 'name', 'styleUrl': 'styleUrl', });
+lyr__2.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', });
 lyr__3.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
-lyr__4.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', 'fill': 'fill', 'fill-opacity': 'fill-opacity', 'stroke': 'stroke', 'stroke-width': 'stroke-width', 'stroke-opacity': 'stroke-opacity', });
-lyr_boundary_administrative__5.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'boundary': 'boundary', 'wikipedia': 'wikipedia', 'wikidata': 'wikidata', 'type': 'type', 'old_name': 'old_name', 'official_status': 'official_status', 'name:uk': 'name:uk', 'name:ru': 'name:ru', 'name:en': 'name:en', 'admin_level': 'admin_level', 'addr:region': 'addr:region', 'addr:country': 'addr:country', });
-lyr__30042026_110039Layer0_1.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr__2.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
+lyr__4.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
+lyr__5.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', });
+lyr__6.set('fieldAliases', {'ID': 'ID', 'Дата_и_время': 'Дата_и_время', 'Адрес': 'Адрес', 'Категория': 'Категория', 'Комментарий': 'Комментарий', 'Фото': 'Фото', });
+lyr__1.set('fieldImages', {'id': '', '_id': '', 'name': '', 'styleUrl': '', });
+lyr__2.set('fieldImages', {'name': '', 'description': '', 'skpdi': '', });
 lyr__3.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
-lyr__4.set('fieldImages', {'name': '', 'description': '', 'skpdi': '', 'fill': '', 'fill-opacity': '', 'stroke': '', 'stroke-width': '', 'stroke-opacity': '', });
-lyr_boundary_administrative__5.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', 'full_id': '', 'osm_id': '', 'osm_type': '', 'boundary': '', 'wikipedia': '', 'wikidata': '', 'type': '', 'old_name': '', 'official_status': '', 'name:uk': '', 'name:ru': '', 'name:en': '', 'admin_level': '', 'addr:region': '', 'addr:country': '', });
-lyr__30042026_110039Layer0_1.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
-lyr__2.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
+lyr__4.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
+lyr__5.set('fieldImages', {'name': '', 'description': '', 'skpdi': '', });
+lyr__6.set('fieldImages', {'ID': 'Range', 'Дата_и_время': 'TextEdit', 'Адрес': 'TextEdit', 'Категория': 'TextEdit', 'Комментарий': 'TextEdit', 'Фото': 'TextEdit', });
+lyr__1.set('fieldLabels', {'id': 'no label', '_id': 'no label', 'name': 'no label', 'styleUrl': 'no label', });
+lyr__2.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
 lyr__3.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
-lyr__4.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', 'fill': 'no label', 'fill-opacity': 'no label', 'stroke': 'no label', 'stroke-width': 'no label', 'stroke-opacity': 'no label', });
-lyr_boundary_administrative__5.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', 'full_id': 'no label', 'osm_id': 'no label', 'osm_type': 'no label', 'boundary': 'no label', 'wikipedia': 'no label', 'wikidata': 'no label', 'type': 'no label', 'old_name': 'no label', 'official_status': 'no label', 'name:uk': 'no label', 'name:ru': 'no label', 'name:en': 'no label', 'admin_level': 'no label', 'addr:region': 'no label', 'addr:country': 'no label', });
-lyr_boundary_administrative__5.on('precompose', function(evt) {
+lyr__4.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
+lyr__5.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
+lyr__6.set('fieldLabels', {'ID': 'no label', 'Дата_и_время': 'no label', 'Адрес': 'no label', 'Категория': 'no label', 'Комментарий': 'no label', 'Фото': 'no label', });
+lyr__6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
