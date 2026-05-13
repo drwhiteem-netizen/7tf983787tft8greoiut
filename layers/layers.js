@@ -61,9 +61,9 @@ var lyr__2 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource__2, 
                 style: style__2,
-                popuplayertitle: 'ОП Красногорск',
+                popuplayertitle: 'Количество',
                 interactive: true,
-                title: '<img src="styles/legend/_2.png" /> ОП Красногорск'
+                title: '<img src="styles/legend/_2.png" /> Количество'
             });
 var format__3 = new ol.format.GeoJSON();
 var features__3 = format__3.readFeatures(json__3, 
@@ -148,21 +148,21 @@ var lyr__7 = new ol.layer.Vector({
 lyr_2gisMap_0.setVisible(true);lyr__1.setVisible(true);lyr__2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr__5.setVisible(true);lyr___6.setVisible(true);lyr__7.setVisible(true);
 var layersList = [lyr_2gisMap_0,lyr__1,lyr__2,lyr__3,lyr__4,lyr__5,lyr___6,lyr__7];
 lyr__1.set('fieldAliases', {'name': 'name', 'Количество_Чат-боты': 'Количество_Чат-боты', });
-lyr__2.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', });
+lyr__2.set('fieldAliases', {'name': 'name', 'Чат-боты': 'Чат-боты', });
 lyr__3.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
 lyr__4.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
 lyr__5.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', });
 lyr___6.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'boundary': 'boundary', 'wikipedia': 'wikipedia', 'wikidata': 'wikidata', 'type': 'type', 'old_name': 'old_name', 'official_status': 'official_status', 'name:uk': 'name:uk', 'name:ru': 'name:ru', 'name:en': 'name:en', 'admin_level': 'admin_level', 'addr:region': 'addr:region', 'addr:country': 'addr:country', });
 lyr__7.set('fieldAliases', {'ID': 'ID', 'Дата_и_время': 'Дата_и_время', 'Адрес': 'Адрес', 'Категория': 'Категория', 'Комментарий': 'Комментарий', 'Фото': 'Фото', });
 lyr__1.set('fieldImages', {'name': 'TextEdit', 'Количество_Чат-боты': 'TextEdit', });
-lyr__2.set('fieldImages', {'name': 'TextEdit', 'description': 'TextEdit', 'skpdi': 'TextEdit', });
+lyr__2.set('fieldImages', {'name': 'TextEdit', 'Чат-боты': 'TextEdit', });
 lyr__3.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
 lyr__4.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
 lyr__5.set('fieldImages', {'name': 'TextEdit', 'description': 'TextEdit', 'skpdi': 'TextEdit', });
 lyr___6.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'osm_type': 'TextEdit', 'boundary': 'TextEdit', 'wikipedia': 'TextEdit', 'wikidata': 'TextEdit', 'type': 'TextEdit', 'old_name': 'TextEdit', 'official_status': 'TextEdit', 'name:uk': 'TextEdit', 'name:ru': 'TextEdit', 'name:en': 'TextEdit', 'admin_level': 'TextEdit', 'addr:region': 'TextEdit', 'addr:country': 'TextEdit', });
-lyr__7.set('fieldImages', {'ID': 'Range', 'Дата_и_время': 'TextEdit', 'Адрес': 'TextEdit', 'Категория': 'TextEdit', 'Комментарий': 'TextEdit', 'Фото': 'TextEdit', });
+lyr__7.set('fieldImages', {'ID': 'TextEdit', 'Дата_и_время': 'TextEdit', 'Адрес': 'TextEdit', 'Категория': 'TextEdit', 'Комментарий': 'TextEdit', 'Фото': 'TextEdit', });
 lyr__1.set('fieldLabels', {'name': 'no label', 'Количество_Чат-боты': 'inline label - always visible', });
-lyr__2.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
+lyr__2.set('fieldLabels', {'name': 'no label', 'Чат-боты': 'no label', });
 lyr__3.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__4.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__5.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
