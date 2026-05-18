@@ -57,15 +57,16 @@ var lyr__2 = new ol.layer.Vector({
     <img src="styles/legend/_2_13.png" /> Райцентр<br />\
     <img src="styles/legend/_2_14.png" /> Сабурово<br />\
     <img src="styles/legend/_2_15.png" /> Теплый бетон<br />\
-    <img src="styles/legend/_2_16.png" /> ТО Красногорск<br />\
-    <img src="styles/legend/_2_17.png" /> ТО Нахабино<br />\
-    <img src="styles/legend/_2_18.png" /> ТО Отрадненское<br />\
-    <img src="styles/legend/_2_19.png" /> ТО Павшинская Пойма<br />\
-    <img src="styles/legend/_2_20.png" /> Турецкий городок<br />\
-    <img src="styles/legend/_2_21.png" /> Чернево-1<br />\
-    <img src="styles/legend/_2_22.png" /> Чернево-2<br />\
-    <img src="styles/legend/_2_23.png" /> Южный<br />\
-    <img src="styles/legend/_2_24.png" /> <br />' });
+    <img src="styles/legend/_2_16.png" /> ТО Ильинское<br />\
+    <img src="styles/legend/_2_17.png" /> ТО Красногорск<br />\
+    <img src="styles/legend/_2_18.png" /> ТО Нахабино<br />\
+    <img src="styles/legend/_2_19.png" /> ТО Отрадненское<br />\
+    <img src="styles/legend/_2_20.png" /> ТО Павшинская Пойма<br />\
+    <img src="styles/legend/_2_21.png" /> Турецкий городок<br />\
+    <img src="styles/legend/_2_22.png" /> Чернево-1<br />\
+    <img src="styles/legend/_2_23.png" /> Чернево-2<br />\
+    <img src="styles/legend/_2_24.png" /> Южный<br />\
+    <img src="styles/legend/_2_25.png" /> <br />' });
 var format__3 = new ol.format.GeoJSON();
 var features__3 = format__3.readFeatures(json__3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -168,7 +169,7 @@ var lyr__8 = new ol.layer.Vector({
 lyr_2gisMap_0.setVisible(true);lyr__1.setVisible(true);lyr__2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr__5.setVisible(true);lyr__6.setVisible(true);lyr__7.setVisible(true);lyr__8.setVisible(true);
 var layersList = [lyr_2gisMap_0,lyr__1,lyr__2,lyr__3,lyr__4,lyr__5,lyr__6,lyr__7,lyr__8];
 lyr__1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'boundary': 'boundary', 'wikipedia': 'wikipedia', 'wikidata': 'wikidata', 'type': 'type', 'old_name': 'old_name', 'official_status': 'official_status', 'name:uk': 'name:uk', 'name:ru': 'name:ru', 'name:en': 'name:en', 'admin_level': 'admin_level', 'addr:region': 'addr:region', 'addr:country': 'addr:country', });
-lyr__2.set('fieldAliases', {'name': 'name', 'Чат-бот': 'Чат-бот', 'Добродел': 'Добродел', });
+lyr__2.set('fieldAliases', {'name': 'name', 'Чат-бот': 'Чат-бот', 'Добродел': 'Добродел', 'Дворов': 'Дворов', 'Общ.пространств': 'Общ.пространств', });
 lyr__3.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
 lyr__4.set('fieldAliases', {'name': 'name', 'Исполнитель': 'Исполнитель', 'SKPDI ID': 'SKPDI ID', 'Тип покрытия': 'Тип покрытия', 'Категория': 'Категория', 'Протяженность': 'Протяженность', });
 lyr__5.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi': 'skpdi', });
@@ -176,7 +177,7 @@ lyr__6.set('fieldAliases', {'name': 'name', 'description': 'description', 'skpdi
 lyr__7.set('fieldAliases', {'ID': 'ID', 'Номер': 'Номер', 'Срок': 'Срок', 'Группа': 'Группа', 'Категория': 'Категория', 'Ссылка': 'Ссылка', });
 lyr__8.set('fieldAliases', {'Номер': 'Номер', 'Срок': 'Срок', 'Адрес': 'Адрес', 'Группа': 'Группа', 'Категория': 'Категория', 'Ссылка': 'Ссылка', });
 lyr__1.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'osm_type': 'TextEdit', 'boundary': 'TextEdit', 'wikipedia': 'TextEdit', 'wikidata': 'TextEdit', 'type': 'TextEdit', 'old_name': 'TextEdit', 'official_status': 'TextEdit', 'name:uk': 'TextEdit', 'name:ru': 'TextEdit', 'name:en': 'TextEdit', 'admin_level': 'TextEdit', 'addr:region': 'TextEdit', 'addr:country': 'TextEdit', });
-lyr__2.set('fieldImages', {'name': 'TextEdit', 'Чат-бот': 'TextEdit', 'Добродел': 'TextEdit', });
+lyr__2.set('fieldImages', {'name': 'TextEdit', 'Чат-бот': 'TextEdit', 'Добродел': 'TextEdit', 'Дворов': 'Range', 'Общ.пространств': 'Range', });
 lyr__3.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
 lyr__4.set('fieldImages', {'name': '', 'Исполнитель': '', 'SKPDI ID': '', 'Тип покрытия': '', 'Категория': '', 'Протяженность': '', });
 lyr__5.set('fieldImages', {'name': 'TextEdit', 'description': 'TextEdit', 'skpdi': 'TextEdit', });
@@ -184,7 +185,7 @@ lyr__6.set('fieldImages', {'name': 'TextEdit', 'description': 'TextEdit', 'skpdi
 lyr__7.set('fieldImages', {'ID': 'TextEdit', 'Номер': 'TextEdit', 'Срок': 'TextEdit', 'Группа': 'TextEdit', 'Категория': 'TextEdit', 'Ссылка': 'TextEdit', });
 lyr__8.set('fieldImages', {'Номер': 'TextEdit', 'Срок': 'TextEdit', 'Адрес': 'TextEdit', 'Группа': 'TextEdit', 'Категория': 'TextEdit', 'Ссылка': 'TextEdit', });
 lyr__1.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', 'full_id': 'no label', 'osm_id': 'no label', 'osm_type': 'no label', 'boundary': 'no label', 'wikipedia': 'no label', 'wikidata': 'no label', 'type': 'no label', 'old_name': 'no label', 'official_status': 'no label', 'name:uk': 'no label', 'name:ru': 'no label', 'name:en': 'no label', 'admin_level': 'no label', 'addr:region': 'no label', 'addr:country': 'no label', });
-lyr__2.set('fieldLabels', {'name': 'no label', 'Чат-бот': 'inline label - visible with data', 'Добродел': 'inline label - visible with data', });
+lyr__2.set('fieldLabels', {'name': 'no label', 'Чат-бот': 'inline label - visible with data', 'Добродел': 'inline label - visible with data', 'Дворов': 'inline label - visible with data', 'Общ.пространств': 'inline label - visible with data', });
 lyr__3.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__4.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__5.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
