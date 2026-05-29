@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([4098068.203126, 7501626.389846, 4194932.748452, 7552632.936582], map.getSize());
+map.getView().fit([4089806.820523, 7496875.814573, 4199399.353856, 7551943.014573], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -494,6 +494,17 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //title
 
+var Title = new ol.control.Control({
+    element: (() => {
+        var titleElement = document.createElement('div');
+        titleElement.className = 'top-left-title ol-control';
+        titleElement.innerHTML = '<h2 class="project-title">Интерактивная карта нарушений содержания городской округ Красногорск</h2>';
+        return titleElement;
+    })(),
+    target: 'top-left-container'
+});
+map.addControl(Title)
+    
 //abstract
 
 
