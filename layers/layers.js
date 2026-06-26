@@ -169,6 +169,14 @@ var lyr__8 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/_8.png" /> Добродел'
             });
+var group_rez_ = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'rez_Красногорск'});
+var group_ = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'НСПД'});
 
 lyr_2gisMap_0.setVisible(true);lyr__1.setVisible(true);lyr__2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr__5.setVisible(true);lyr__6.setVisible(true);lyr__7.setVisible(true);lyr__8.setVisible(true);
 var layersList = [lyr_2gisMap_0,lyr__1,lyr__2,lyr__3,lyr__4,lyr__5,lyr__6,lyr__7,lyr__8];
