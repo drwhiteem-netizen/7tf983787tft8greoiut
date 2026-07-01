@@ -1,54 +1,5 @@
 var size = 0;
 var placement = 'point';
-function categories__7(feature, value, size, resolution, labelText,
-                       labelFont, labelFill, bufferColor, bufferWidth,
-                       placement) {
-                var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-                switch(valueStr) {case 'БОРТ/ИДН/ЯМЫ':
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case 'ДИП':
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(222,115,176,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case 'КП':
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(238,114,19,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case 'МУСОР':
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(149,222,48,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case 'РЕМОНТ':
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(105,177,232,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;}};
 
 var style__7 = function(feature, resolution){
     var context = {
@@ -70,7 +21,7 @@ var style__7 = function(feature, resolution){
     size = clusteredFeatures.length;
     if (size == 1) { // If cluster has one feature
         var feature = clusteredFeatures[0];
-        value = clusteredFeatures[0].get("Группа");
+        value = clusteredFeatures[0].get("");
         if ("" !== null) {
             labelText = String("");
         }
@@ -115,10 +66,13 @@ var style__7 = function(feature, resolution){
 			})
 		];
 	}
-    
-    var style = categories__7(feature, value, size, resolution, labelText,
-                            labelFont, labelFill, bufferColor,
-                            bufferWidth, placement);
+    var style = [ new ol.style.Style({
+        image: new ol.style.RegularShape({radius: 8.0 + size, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(255,0,216,1.0)'})}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
 
     return style;
 };
