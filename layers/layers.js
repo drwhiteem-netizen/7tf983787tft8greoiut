@@ -152,8 +152,14 @@ var lyr__7 = new ol.layer.Vector({
                 style: style__7,
                 popuplayertitle: 'Дефекты СКПДИ',
                 interactive: true,
-                title: '<img src="styles/legend/_7.png" /> Дефекты СКПДИ'
-            });
+    title: 'Дефекты СКПДИ<br />\
+    <img src="styles/legend/_7_0.png" /> Благоустройство<br />\
+    <img src="styles/legend/_7_1.png" /> Борткамень<br />\
+    <img src="styles/legend/_7_2.png" /> Граффити<br />\
+    <img src="styles/legend/_7_3.png" /> Дефект ДИП<br />\
+    <img src="styles/legend/_7_4.png" /> Иное<br />\
+    <img src="styles/legend/_7_5.png" /> Освещение<br />\
+    <img src="styles/legend/_7_6.png" /> Уборка<br />' });
 var format__8 = new ol.format.GeoJSON();
 var features__8 = format__8.readFeatures(json__8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -192,7 +198,7 @@ lyr__5.set('fieldImages', {'name': 'TextEdit', 'description': 'TextEdit', 'skpdi
 lyr__6.set('fieldImages', {'ID': 'TextEdit', 'Дата': 'DateTime', 'Адрес': 'TextEdit', 'Группа': 'TextEdit', 'Категория': 'TextEdit', 'Комментарий': 'TextEdit', 'Фото': 'TextEdit', });
 lyr__7.set('fieldImages', {'ID': 'TextEdit', 'Дата': 'DateTime', 'Адрес': 'TextEdit', 'Характер': 'TextEdit', 'Вид дефекта': 'TextEdit', 'Фото': 'TextEdit', });
 lyr__8.set('fieldImages', {'Номер': 'TextEdit', 'Срок': 'TextEdit', 'Адрес': 'TextEdit', 'Группа': 'TextEdit', 'Категория': 'TextEdit', 'Ссылка': 'TextEdit', });
-lyr__1.set('fieldLabels', {'name': 'no label', 'Чат-бот': 'inline label - visible with data', 'Добродел': 'inline label - visible with data', 'Дворов': 'inline label - visible with data', 'Общ.пространств': 'inline label - visible with data', 'МКД': 'inline label - visible with data', 'Площадь, м2': 'no label', 'Дефект': 'inline label - visible with data', });
+lyr__1.set('fieldLabels', {'name': 'no label', 'Чат-бот': 'inline label - visible with data', 'Добродел': 'inline label - visible with data', 'Дворов': 'inline label - visible with data', 'Общ.пространств': 'inline label - visible with data', 'МКД': 'inline label - visible with data', 'Площадь, м2': 'hidden field', 'Дефект': 'inline label - visible with data', });
 lyr__2.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__3.set('fieldLabels', {'name': 'no label', 'Исполнитель': 'no label', 'SKPDI ID': 'no label', 'Тип покрытия': 'no label', 'Категория': 'no label', 'Протяженность': 'no label', });
 lyr__4.set('fieldLabels', {'name': 'no label', 'description': 'no label', 'skpdi': 'no label', });
