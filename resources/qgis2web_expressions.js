@@ -385,19 +385,19 @@ function fnc_strpos(values, context) {
 };
 
 function fnc_left(values, context) {
-    return String(values[0]).substr(0, values[1]);
+    return false;
 };
 
 function fnc_right(values, context) {
-     return String(values[0]).substr(0, values[1]);
+    return false;
 };
 
 function fnc_rpad(values, context) {
-    return String(values[0]).padEnd(values[1], values[2]);
+    return false;
 };
 
 function fnc_lpad(values, context) {
-    return String(values[0]).padStart(values[1], values[2]);
+    return false;
 };
 
 function fnc_format(values, context) {

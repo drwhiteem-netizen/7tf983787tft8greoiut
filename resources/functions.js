@@ -1,6 +1,6 @@
 var createTextStyle = function(feature, resolution, labelText, labelFont,
                                labelFill, placement, bufferColor,
-                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat) {
+                               bufferWidth) {
 
     if (feature.hide || !labelText) {
         return; 
@@ -19,12 +19,10 @@ var createTextStyle = function(feature, resolution, labelText, labelFont,
         font: labelFont,
         text: labelText,
         textBaseline: "middle",
-        textAlign: textAlign,
-        offsetX: offsetX,
-        offsetY: offsetY,
+        textAlign: "left",
+        offsetX: 8,
+        offsetY: 3,
         placement: placement,
-        overflow: overflow,
-        repeat: repeat,
         maxAngle: 0,
         fill: new ol.style.Fill({
           color: labelFill
