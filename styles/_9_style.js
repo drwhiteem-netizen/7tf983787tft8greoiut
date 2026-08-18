@@ -69,7 +69,7 @@ var style__9 = function(feature, resolution){
 		];
 	}
     var style = [ new ol.style.Style({
-        image: new ol.style.RegularShape({radius: 8.8 + size, points: 4,
+        image: new ol.style.RegularShape({radius: 5.6 + size, points: 4,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(128,17,25,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(219,30,42,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
